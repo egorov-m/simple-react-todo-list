@@ -1,0 +1,18 @@
+.main_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 750px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: normal;
+}

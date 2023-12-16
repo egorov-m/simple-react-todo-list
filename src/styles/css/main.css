@@ -1,0 +1,54 @@
+:root {
+    --accent: #6c63ff;
+    --accent-transparent: #6c63ff7f;
+    --accent-border: #534cc2;
+    --shadow-bg: #252525B2;
+    --faded: #cdcdcd;
+
+    --background: #f7f7f7;
+    --text-primary: #252525;
+    --text-secondary: #f7f7f7;
+    --text-placeholder: #c3c1e5;
+    --text-accent: #6c63ff;
+    --text-muted: #25252580;
+    --border: #6c63ff;
+
+    --header-height: 56px;
+}
+
+[data-theme='dark'] {
+    --background: #252525;
+    --text-primary: #f7f7f7;
+    --text-secondary: #f7f7f7;
+    --text-placeholder: #666;
+    --text-accent: #6c63ff;
+    --text-muted: #ffffff80;
+    --border: #f7f7f7;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url("../../assets/fonts/Kanit-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url("../../assets/fonts/Kanit-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background);
+    height: 100%;
+}
+
+body {
+    font-family: Kanit, serif;
+}
+
+*::selection {
+    background-color: var(--text-placeholder);
+}

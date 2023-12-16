@@ -1,0 +1,21 @@
+.checkbox {
+    align-items: center;
+    background-color: var(--background);
+    border-radius: 2px;
+    border: 1px solid var(--accent);
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox_selected {
+    background-color: var(--accent);
+}
+
+.checkbox_selected > .marker {
+    border-top: 2px solid var(--text-secondary);
+    border-left: 2px solid var(--text-secondary);
+    height: calc(52.51%);
+    margin-bottom: calc(11.54%);
+    transform: rotate(-135.559deg);
+    width: calc(26.92%);
+}

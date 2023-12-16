@@ -1,0 +1,26 @@
+.item {
+    align-items: center;
+    border-bottom: 1px solid var(--accent-transparent);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+.title {
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+.item:hover > button {
+    opacity: 100%;
+}

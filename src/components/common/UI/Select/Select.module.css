@@ -1,0 +1,27 @@
+.select {
+    align-items: flex-start;
+    background: var(--accent);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    font-family: Kanit, serif;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 10px;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-left: 10px;
+    outline: none;
+}
+
+.option {
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+}

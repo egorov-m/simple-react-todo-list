@@ -19,7 +19,6 @@ const StoreProvider = ({ children }) => {
         setTasks(tasks.map(task => task.id === id ? updatedTask : task));
     };
     const getFilteredTasks = (title, isCompleted) => {
-        // setTasks(filteredTasks);
         title = title.trim();
         return tasks.filter(task => {
             let filter = true;

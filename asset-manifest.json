@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "https://egorov-m.github.io/simple-react-todo-list/static/css/main.06c0fd63.css",
+    "main.js": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.a2f82ad2.js",
+    "static/media/Kanit-Medium.ttf": "https://egorov-m.github.io/simple-react-todo-list/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
+    "static/media/Kanit-Regular.ttf": "https://egorov-m.github.io/simple-react-todo-list/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/empty_light_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/empty_light_icon.e77e8c75c80080b12d641d0dff69fe4d.svg",
+    "static/media/empty_dark_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/empty_dark_icon.9b8a4eaeb5653c0c69b370bdabcda1b6.svg",
+    "static/media/cursor_pointer_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/cursor_pointer_icon.03e18e27b388e7084b504d87015881f7.svg",
+    "static/media/plus_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/plus_icon.e66c0c38f82cc3ef233976944e605c0f.svg",
+    "static/media/sun_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/sun_icon.b91d00b493912e67f8d7ee718c34d2a1.svg",
+    "index.html": "https://egorov-m.github.io/simple-react-todo-list/index.html",
+    "static/media/moon_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/moon_icon.7663f9eae56aaa6acfe4aabc576cd19a.svg",
+    "static/media/basket_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/basket_icon.e54a0ea0fc95f03117d8c2be5ec67f24.svg",
+    "static/media/pencil_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/pencil_icon.75bccf45d6c7867b40511ae264ac27b5.svg",
+    "static/media/back_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/back_icon.3b6c315349effe6afdf7188e34c46861.svg",
+    "static/media/magnifier_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/magnifier_icon.e279bb4077b834de295aeb431c11c416.svg",
+    "static/media/arrow_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/arrow_icon.819a7174d3755ff3a58f8b2f743a0b45.svg",
+    "main.06c0fd63.css.map": "https://egorov-m.github.io/simple-react-todo-list/static/css/main.06c0fd63.css.map",
+    "main.a2f82ad2.js.map": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.a2f82ad2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06c0fd63.css",
+    "static/js/main.a2f82ad2.js"
+  ]
+}

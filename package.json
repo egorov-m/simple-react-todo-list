@@ -7,7 +7,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -32,6 +34,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.0",
     "react-scripts": "^5.0.1",
-    "react-svg": "^16.1.31"
+    "react-svg": "^16.1.31",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

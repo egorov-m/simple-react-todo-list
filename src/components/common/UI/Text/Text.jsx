@@ -8,7 +8,7 @@ export const Text = (props) => {
         ...others
     } = props
 
-    const Tag = tag ?? 'span';
+    const Tag = tag ?? "span";
 
     return (
         <Tag
@@ -18,4 +18,4 @@ export const Text = (props) => {
             {others.children}
         </Tag>
     )
-}
+};

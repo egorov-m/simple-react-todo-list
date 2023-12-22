@@ -1,6 +1,6 @@
 import React from "react";
 import {createHashRouter, Navigate, RouterProvider} from "react-router-dom";
-import {MainLayout} from "../../common/Main/MainLayout";
+import {MainLayout} from "../../common/Main";
 import {NotFoundPage} from "../../pages/NotFound";
 import {HomePage} from "../../pages/Home";
 

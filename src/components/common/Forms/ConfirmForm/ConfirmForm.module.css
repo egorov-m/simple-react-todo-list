@@ -1,0 +1,14 @@
+.modal_button {
+    position: absolute;
+    bottom: 18px;
+}
+
+.confirm_button {
+    right: 30px;
+    max-width: 120px;
+}
+
+.cancel_button {
+    left: 30px;
+    max-width: 110px;
+}

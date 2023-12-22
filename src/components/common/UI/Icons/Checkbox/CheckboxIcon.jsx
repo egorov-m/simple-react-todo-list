@@ -2,8 +2,7 @@ import classes from "./CheckboxIcon.module.css";
 
 export const CheckboxSelectedIcon = (props) => {
     const {
-        style,
-        ...others
+        style
     } = props;
     return (
         <div  className={classes.checkbox + " " + classes.checkbox_selected} style={style}>
@@ -14,8 +13,7 @@ export const CheckboxSelectedIcon = (props) => {
 
 export const CheckboxUnSelectedIcon = (props) => {
     const {
-        style,
-        ...others
+        style
     } = props;
     return (
         <div  className={classes.checkbox} style={style} />

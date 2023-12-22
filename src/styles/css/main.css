@@ -2,7 +2,7 @@
     --accent: #6c63ff;
     --accent-transparent: #6c63ff7f;
     --accent-border: #534cc2;
-    --shadow-bg: #252525B2;
+    --shadow-bg: #252525b2;
     --faded: #cdcdcd;
 
     --background: #f7f7f7;
@@ -12,6 +12,7 @@
     --text-accent: #6c63ff;
     --text-muted: #25252580;
     --border: #6c63ff;
+    --modal-border: #f7f7f7;
 
     --header-height: 56px;
 }

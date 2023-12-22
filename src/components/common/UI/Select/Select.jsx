@@ -2,10 +2,17 @@ import classes from "./Select.module.css";
 
 export const Select = (props) => {
     const {
-        data
+        data,
+        onChange
     } = props
+
+    const handleSelectChange = (event) => {
+        const selectedValue = event.target.value;
+        onChange(selectedValue);
+    };
+
     return (
-        <select className={classes.select}>
+        <select className={classes.select} onChange={handleSelectChange}>
             {data.map(
                 item => <option
                     className={classes.option}

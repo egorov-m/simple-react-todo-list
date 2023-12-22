@@ -1,0 +1,18 @@
+.modal_input_field {
+    margin-top: 25px;
+}
+
+.modal_button {
+    position: absolute;
+    bottom: 18px;
+}
+
+.confirm_button {
+    right: 30px;
+    max-width: 97px;
+}
+
+.cancel_button {
+    left: 30px;
+    max-width: 110px;
+}

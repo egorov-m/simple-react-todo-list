@@ -1,0 +1,22 @@
+.base {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 22px;
+    width: 100%;
+}
+
+.button {
+    background: var(--accent);
+    border: none;
+    color: var(--text-secondary);
+}
+
+.outline_button {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}

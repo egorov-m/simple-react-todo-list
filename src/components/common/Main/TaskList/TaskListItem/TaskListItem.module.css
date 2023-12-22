@@ -18,7 +18,13 @@
     font-weight: 500;
     line-height: 100%;
     margin-right: auto;
+    overflow-wrap: anywhere;
     text-transform: uppercase;
+}
+
+.title_strikethrough {
+    color: var(--text-muted);
+    text-decoration: line-through;
 }
 
 .item:hover > button {

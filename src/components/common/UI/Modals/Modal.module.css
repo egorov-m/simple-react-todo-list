@@ -1,0 +1,35 @@
+.modal_overlay {
+    background-color: var(--shadow-bg);
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    padding-top: var(--header-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.modal_content {
+    background-color: var(--background);
+    border-radius: 16px;
+    border: 1px solid var(--modal-border);
+    height: 100%;
+    margin: 118px auto;
+    max-height: 289px;
+    max-width: 500px;
+    padding: 0 30px;
+    position: relative;
+    width: 100%;
+}
+
+.modal_title {
+    color: var(--text-primary);
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 18px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+}

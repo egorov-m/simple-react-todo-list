@@ -2,17 +2,16 @@ import React from "react";
 
 import {RoutesMain} from "./components/routes/main"
 
-import StoreProvider from "./core/stores";
-import {ThemeProvider} from "./core/themes";
+import {QueryClient, QueryClientProvider} from "react-query";
 
+
+const queryClient = new QueryClient();
 
 const App = () => {
     return (
-        <ThemeProvider root={document.documentElement}>
-            <StoreProvider>
-                <RoutesMain />
-            </StoreProvider>
-        </ThemeProvider>
+        <QueryClientProvider client={queryClient}>
+            <RoutesMain />
+        </QueryClientProvider>
     );
 };
 

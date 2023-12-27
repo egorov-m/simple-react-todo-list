@@ -5,6 +5,7 @@ import {MagnifierIcon} from "../../../../assets";
 
 export const SearchForm = (props) => {
     const {
+        value,
         onChange
     } = props;
 
@@ -19,7 +20,7 @@ export const SearchForm = (props) => {
     return (
         <form className={classes.form} onSubmit={handleSubmit}>
             <InputField
-                style={{"flex-grow": 1}}
+                value={value}
                 placeholder={"Search note..."}
                 onSubmit={handleSubmit}
                 onChange={handleChange}
@@ -27,7 +28,7 @@ export const SearchForm = (props) => {
             <IconButton
                 icon={MagnifierIcon}
                 iconStyle={{width:21, height:21, fill: "var(--border)"}}
-                buttonStyle={{"margin-left":-37}} />
+                buttonStyle={{marginLeft:-37}} />
         </form>
     )
 };

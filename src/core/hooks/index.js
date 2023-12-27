@@ -1,3 +1,2 @@
 export {useDocumentTitle} from "./useDocument";
-export {useStores} from "./useStores";
-export {useTheme} from "./useTheme";
+export {useTasks, useAddTask, useDeleteTask, useUpdateTasks, useTasksFilter, useTheme} from "./useStores";

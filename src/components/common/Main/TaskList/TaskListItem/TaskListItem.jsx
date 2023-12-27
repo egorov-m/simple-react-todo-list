@@ -4,17 +4,19 @@ import {IconButton, JsIconButton} from "../../../UI/IconButton";
 import {CheckboxSelectedIcon} from "../../../UI/Icons";
 import {CheckboxUnSelectedIcon} from "../../../UI/Icons/Checkbox/CheckboxIcon";
 import {BasketIcon, PencilIcon} from "../../../../../assets";
-import {useStores} from "../../../../../core/hooks";
 import {InputModal} from "../../../UI/Modals";
 import {useState} from "react";
 import {ConfirmModal} from "../../../UI/Modals/ConfirmModal";
+import {useDeleteTask, useUpdateTasks} from "../../../../../core/hooks";
+import {Task} from "../../../../../core/models";
 
 export const TaskListItem = (props) => {
     const {
         data
     } = props
 
-    const { updateTask, deleteTask } = useStores();
+    const { updateTask } = useUpdateTasks();
+    const { deleteTask } = useDeleteTask();
     const [showEditTaskModal, setShowEditTaskModal] = useState(false);
     const [showDeleteTaskModal, setShowDeleteTaskModal] = useState(false);
 
@@ -29,8 +31,7 @@ export const TaskListItem = (props) => {
                 value={data.title}
                 inputPlaceholder={"Input your task..."}
                 onApply={(title) => {
-                    data.title = title;
-                    updateTask(data.id, data);
+                    updateTask(data.id, new Task(data.id, title, data.isCompleted));
                     setShowEditTaskModal(false);
                 }}
                 onCancel={() => setShowEditTaskModal(false)}
@@ -46,10 +47,9 @@ export const TaskListItem = (props) => {
             <JsIconButton
                 Icon={icon}
                 iconStyle={{width:26, height:26}}
-                buttonStyle={{"margin-right":17}}
+                buttonStyle={{marginRight:17}}
                 onClick={() => {
-                    data.isCompleted = !data.isCompleted
-                    updateTask(data.id, data)
+                    updateTask(data.id, new Task(data.id, data.title, !data.isCompleted))
                 }}
             />
             <Text className={titleClasses}>{data.title}</Text>
@@ -57,7 +57,7 @@ export const TaskListItem = (props) => {
                 icon={PencilIcon}
                 isHidden={true}
                 iconStyle={{width:18, height:18, stroke:"var(--faded)"}}
-                buttonStyle={{"margin-right":10,}}
+                buttonStyle={{marginRight:10}}
                 onClick={() => setShowEditTaskModal(true)}
             />
             <IconButton

@@ -5,12 +5,12 @@ import {Header} from "../Header"
 
 const MainLayoutComponent = (props) => {
     return (
-        <dic className={classes.main_container}>
+        <div className={classes.main_container}>
             <Header />
-            <main className={classes.main_block} {...props}>
+            <main className={classes.main_block}>
                 {props.children}
             </main>
-        </dic>
+        </div>
     )
 }
 

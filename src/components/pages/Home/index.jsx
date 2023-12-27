@@ -1,35 +1,29 @@
-import {useDocumentTitle, useStores, useTheme} from "../../../core/hooks";
+import {useDocumentTitle, useTasks, useTasksFilter, useTheme} from "../../../core/hooks";
 import classes from "./HomePage.module.css";
 import {Text} from "../../common/UI/Text";
 import {TaskList, ToolBar} from "../../common/Main";
 import {EmptyDarkIcon, EmptyLightIcon} from "../../../assets";
 import {Image} from "../../common/UI/Image";
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 const HomePageComponent = (props) => {
     useDocumentTitle("Home - ToDo");
 
     const { theme } = useTheme();
 
-    const [filter, setFilter] = useState({title: "", status: null});
-    const { getFilteredTasks } = useStores();
-    const [tasks, setTasks] = useState([]);
-
-    useEffect(() => {
-        const filteredTasks = getFilteredTasks(filter.title, filter.status);
-        setTasks(filteredTasks);
-    }, [filter, getFilteredTasks]);
+    const {tasksFilter, updateTasksFilter} = useTasksFilter();
+    const {tasks} = useTasks(tasksFilter);
 
     return (
         <div className={classes.main_container}>
             <Text className={classes.title}>TODO LIST</Text>
             <ToolBar
-                style={{"margin-top": 18}}
-                filter={filter}
-                setFilter={setFilter}
+                style={{marginTop: 18}}
+                filter={tasksFilter}
+                setFilter={updateTasksFilter}
             />
             {Array.isArray(tasks) && tasks.length > 0 ? (
-                <TaskList data={tasks} style={{"margin-top":30}}/>
+                <TaskList data={tasks} style={{marginTop:30}}/>
             ) : (
                 <Image
                     alt={"Empty task list"}

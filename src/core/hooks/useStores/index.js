@@ -1,5 +1,3 @@
-import {useContext} from "react";
-
-import {StoreContext} from "../../stores"
-
-export const useStores = () =>  useContext(StoreContext);
+export {useTasks, useAddTask, useDeleteTask, useUpdateTasks} from "./Tasks";
+export {useTasksFilter} from "./TasksFilter";
+export {useTheme} from "./Theme";

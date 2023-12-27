@@ -1,10 +1,10 @@
 import {SearchForm} from "../../Forms/SearchForm";
 import {IconButton} from "../../UI/IconButton";
 import {MoonIcon, PlusIcon, SunIcon} from "../../../../assets";
-import {useStores, useTheme} from "../../../../core/hooks";
+import {useAddTask, useTheme} from "../../../../core/hooks";
 import classes from "./ToolBar.module.css";
 import {Select} from "../../UI/Select";
-import {Task} from "../../../../core/models";
+import {Task, TasksFilter} from "../../../../core/models";
 import {v4 as uuid4} from "uuid";
 import {useState} from "react";
 import {InputModal} from "../../UI/Modals";
@@ -17,7 +17,7 @@ export const ToolBar = (props) => {
     } = props;
 
     const { theme, toggleTheme } = useTheme();
-    const { addTask } = useStores();
+    const { addTask } = useAddTask();
     const [showAddTaskModal, setShowAddTaskModal] = useState(false);
 
     const themeIcon = theme === "light" ? MoonIcon : SunIcon;
@@ -35,8 +35,9 @@ export const ToolBar = (props) => {
                     onCancel={() => setShowAddTaskModal(false)}
                 />}
                 <SearchForm
+                    value={filter ? filter.title : ""}
                     onChange={(title) => {
-                        setFilter({title: title, status: filter.status});
+                        setFilter(new TasksFilter(title, filter.isCompleted));
                     }}
                 />
                 <Select
@@ -45,17 +46,18 @@ export const ToolBar = (props) => {
                         {value:"complete"},
                         {value:"incomplete"}
                     ]}
+                    value={filter ? filter.getOptionByStatus() : "all"}
                     onChange={(option) => {
-                        const newFilter = {title: filter.title}
+                        const newFilter = new TasksFilter(filter.title)
                         switch (option) {
                             case "complete":
-                                newFilter.status = true;
+                                newFilter.isCompleted = true;
                                 break;
                             case "incomplete":
-                                newFilter.status = false;
+                                newFilter.isCompleted = false;
                                 break;
                             default:
-                                newFilter.status = null;
+                                newFilter.isCompleted = null;
                         }
                         setFilter(newFilter);
                     }}

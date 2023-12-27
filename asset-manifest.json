@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://egorov-m.github.io/simple-react-todo-list/static/css/main.06c0fd63.css",
-    "main.js": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.0f4f3c6c.js",
+    "main.js": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.6c943015.js",
     "static/media/Kanit-Medium.ttf": "https://egorov-m.github.io/simple-react-todo-list/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
     "static/media/Kanit-Regular.ttf": "https://egorov-m.github.io/simple-react-todo-list/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
     "static/media/empty_light_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/empty_light_icon.e77e8c75c80080b12d641d0dff69fe4d.svg",
@@ -17,10 +17,10 @@
     "static/media/magnifier_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/magnifier_icon.e279bb4077b834de295aeb431c11c416.svg",
     "static/media/arrow_icon.svg": "https://egorov-m.github.io/simple-react-todo-list/static/media/arrow_icon.819a7174d3755ff3a58f8b2f743a0b45.svg",
     "main.06c0fd63.css.map": "https://egorov-m.github.io/simple-react-todo-list/static/css/main.06c0fd63.css.map",
-    "main.0f4f3c6c.js.map": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.0f4f3c6c.js.map"
+    "main.6c943015.js.map": "https://egorov-m.github.io/simple-react-todo-list/static/js/main.6c943015.js.map"
   },
   "entrypoints": [
     "static/css/main.06c0fd63.css",
-    "static/js/main.0f4f3c6c.js"
+    "static/js/main.6c943015.js"
   ]
 }
